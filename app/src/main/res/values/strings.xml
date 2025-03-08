@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YouTubeMusicConnector</string>
+    <string name="nome_musica">Título da Música</string>
+    <string name="nome_artista">Nome do Artista</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="aleatorio">Aleatório</string>
+    <string name="proxima">Próxima</string>
+    <string name="anterior">Anterior</string>
+    <string name="repetir">Repetir</string>
+    <string name="dislike">Dislike</string>
+    <string name="like">Like</string>
+    <string name="capa_musica">Capa da Música</string>
+    <string name="notificacao">Permitir Monitorar Notificaçõe</string>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF0D0D"
+    tools:context=".MainActivity">
+
+    <!-- Capa da música -->
+
+    <!-- Título da música -->
+
+    <!-- Nome do artista -->
+
+    <!-- Controles de reprodução -->
+
+    <!-- Botões Like/Dislike -->
+
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/capa_musica"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_music_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_musica"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtArtist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgThumbnail" />
+
+    <TextView
+        android:id="@+id/txtArtist"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="58dp"
+        android:text="@string/nome_artista"
+        android:textColor="#B3B3B3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgThumbnail"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgThumbnail">
+
+        <ImageButton
+            android:id="@+id/btnShuffle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/aleatorio"
+            android:src="@drawable/shuffle_24px"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/anterior"
+            android:src="@drawable/skip_previous_24px"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/play_pause"
+            android:src="@drawable/play_arrow_24px"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/proxima"
+            android:src="@drawable/skip_next_24px"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnRepeat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/repetir"
+            android:src="@drawable/repeat_24px"
+            app:tint="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.535">
+
+        <ImageButton
+            android:id="@+id/btnDislike"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/dislike"
+            android:src="@drawable/thumb_down_24px"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/like"
+            android:src="@drawable/thumb_up_24px"
+            app:tint="#fff" />
+
+        <ImageButton
+            android:id="@+id/btnNotification"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#A40303"
+            android:contentDescription="@string/notificacao"
+            android:src="@drawable/notifications_active_24px"
+            app:tint="#fff" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
